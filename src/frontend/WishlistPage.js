@@ -1,11 +1,11 @@
-import React, { useEffect,useState } from "react";
+import React from "react";
 //import WomenCollection from './WomenCollectionJson';
 import './WishlistPage.css';
 import { FaShoppingCart } from "react-icons/fa";
 import FooterPage from "./FooterPage";
 import HomePage from "./HomePage";
 import Slider from "./Slider";
-import { json } from "react-router-dom";
+// import { json } from "react-router-dom";
 
 
 //  const search = window.location.search;
@@ -27,7 +27,8 @@ import { json } from "react-router-dom";
 //     }
 // });
 
-  function WishlistPage(){
+  function WishlistPage()
+  {
     const favorateProduct = JSON.parse(localStorage.getItem('wishlist'))||[];
     //console.log("my wish-");
     
@@ -52,7 +53,7 @@ import { json } from "react-router-dom";
         // console.log('item',item);
        // console.log("final");
  //   console.log(JSON.parse(localStorage.getItem('wishlist')));
-    }
+     }
         function addtoCart(p){
             const favorateProduct = JSON.parse(localStorage.getItem('wishlist'))||[];
             console.log("my-product-"+ p);
